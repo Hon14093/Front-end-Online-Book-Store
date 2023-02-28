@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đông Thi | Trang Chủ</title>
+    <link rel="icon"  href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="login_scripts.js"></script>
+
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css"> <!--Thư viện font awesome-->
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css"> <!--Khai báo bootstrap css-->
+    <script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script> <!--Khai báo bootstrap js-->
+    <script src="./jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+<header>
+        
+    <a id="#top" href="trangchu.html" ><img class="center" src="images/logo.png"></a>
+        
+    <nav class="navbar navbar-dark navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse " id="navbarContent"> <!--Các class đều nằm trong bootstrap-->
+            <ul class="navbar-nav w-100">                    <!--thanh nav sẽ thu nhỏ khi chiều dài màn hình <768px-->
+                <li class="nav-item">                        <!--responsive sử dụng bootstrap-->
+                    <a href="trangchu.html">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sachTruyen.html">Sách Truyện</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lienhe.html">Liên Hệ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="search-container">
+        <form name="frm-search" method="get" action="trangtimkiem.html">  
+            <input class="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="words" onkeypress="checkKeySearch(e)">
+            <i class="fa fa-search icon" onclick="doSearch()"></i>
+            <a href="dangky.html" class="fas fa-user icon"></a>
+            <a href="sachTruyen.html" class="fa fa-shopping-cart icon"></a>
+        </form>
+    </div>
+   
+</header>
+
+<main>
+<!------------Phần Giới Thiệt Trang Web------------>
+<section class="container"> <!--Class container có trong bootstrap-->
+    <br>
+    <h1>Giới Thiệu</h1>
+    <div class="row">  <!--class row trong bootstrap-->
+        <article class="col-md-6">   <!--Chọn col-6 vì hàng trong bootstrap được thành 12 cột-->
+            <p>                      <!--md có nghĩa trang web sẽ responsive khi độ dài <768px-->
+                <b>Đông Thi</b> là một trang web nhằm giúp người dùng dễ dàng tiếp cận đến thế giới văn học lẫn trong nước và ngoài nước. Nhận thấy vẻ đẹp của sách truyện, chúng tôi tổng hợp nhiều tác phẩm của nhiều tác giả nổi tiếng khắp nơi trên thế giới. <br>
+            </p>
+            <br>
+            <p>
+                Ở đây, bạn sẽ tìm thấy hàng loạt thể loại sách lẫn truyện mà bạn có thể đọc. Chúng tôi tin rằng với <b>nhiều sự lựa chọn</b> trên đây, ai cũng sẽ tìm được quyển sách hoặc truyện để tận hưởng. <br>
+            </p>
+            <br>
+            <p>
+                <b>Sách</b> là nơi mà những kinh nghiệm, những tri thức của loài người được cha ông chúng ta, những người đi trước gìn giữ và truyền lại cho chúng ta thông qua những trang giấy. Không những vậy sách còn là <b>những tư liệu, những chứng cứ lịch sử</b> về nguồn gốc và quá trình phát triển, tư duy của loài người.
+            </p>
+        </article>
+
+        <article class="col-md-6">
+            <img class="intro-img" src="./images/books-bg.jpg" alt="">
+        </article>
+
+    </div>
+</section>
+    
+<!------------Phần Được Đọc Nhiều------------>
+<section class="container">
+    <h1>Được Đọc Nhiều</h1>
+    <div class="row">
+        <article class="col-md-4">
+            <img class="books-img" src="./images/books/Đắc Nhân Tâm.jpg" alt="DacNhanTam">
+                Đắc nhân tâm của Dale Carnegie là quyển sách nổi tiếng nhất, bán chạy nhất  và có tầm ảnh hưởng nhất của mọi thời đại.
+            <span class="dots">...</span> <!--class dots để hiển thị ... khi chức năng đọc thêm chưa được khởi động-->
+            <span class="more"> <!--class more vs display:none; sẽ hiện lên khi chức năng đọc thêm chưa được khởi động-->
+                Dale Breckenridge Carnegie (24/11/1888 - 1/11/1955) là một nhà văn và nhà thuyết trình Mỹ và là người chịu trách nhiệm các lớp phát triển con người, kỹ năng, nghệ thuật bán hàng, huấn luyện đoàn thể, nói trước công chúng và các kỹ năng giao tiếp giữa mọi người.
+            </span><br>
+            <button class="myBtn read">Read More</button>
+        </article>
+
+
+
+        <article class="col-md-4">
+            <img class="books-img" src="./images/books/Nghĩ Giàu và Làm Giàu.jpg" alt="Giau">
+                Think and Grow Rich - Nghĩ giàu và Làm giàu là một trong những cuốn sách bán chạy nhất mọi thời đại. Đã hơn 60 triệu
+            <span class="dots">...</span>
+            <span class="more">
+                bản được phát hành với gần trăm ngôn ngữ trên toàn thế giới và được công nhận là cuốn sách tạo ra nhiều triệu phú hơn, một cuốn sách truyền cảm hứng thành công nhiều hơn bất cứ cuốn sách kinh doanh nào trong lịch sử. Tác phẩm này đã giúp tác giả của nó, Napoleon Hill, được tôn vinh bằng danh hiệu “người tạo ra những nhà triệu phú”. 
+            </span><br>
+            <button class="myBtn read">Read More</button>
+        </article>
+
+
+
+        <article class="col-md-4">
+            <img class="books-img" src="./images/books/Dòng Chảy.jpg" alt="">
+                Dành cho những ai muốn tối ưu khả năng tập trung để tìm kiếm sự gắn kết trong công việc, hướng đến sự viên mãn, và
+            <span class="dots">...</span>
+            <span class="more">
+                hạnh phúc trong mọi trải nghiệm cuộc sống. <br>
+
+                Có bao giờ bạn hoàn toàn chìm đắm vào một cuốn sách hay, một công việc, hay một buổi trình diễn đến mức không nhận thấy hàng giờ đồng hồ đã trôi qua, thậm chí bạn chẳng có ý niệm gì về mọi thứ xung quanh hay sự tồn tại của chính mình?
+            </span><br>
+            <button class="myBtn read">Read More</button>
+        </article>
+    </div>
+</section>
+
+<!------------Phần Mới Xuất Bản------------>
+<section class="container">
+    <h1>Mới Xuất Bản</h1>
+    <div class="row">
+        <article class="col-md-4">
+            <img class="books-img" src="./images/books/Vực Tối Hôn Nhân.jpg" alt="" width="160px">
+                Nhẫn cưới 5 năm tuổi. <br>
+                Bọn họ đã kết hôn được 5 năm. <br>
+                Dao nhớ ngày họ kết hôn, lúc đeo nhẫn vào tay của cô, Lâm đã nói: “Chúng ta hãy 
+            <span class="dots">...</span>
+            <span class="more">
+                sống hạnh phúc cả đời này.” <br>
+                Vậy mà hiện tại anh nói: “Chúng ta hãy 
+                làm khổ nhau cả đời đi.” <br>
+                Dao nhớ, trước đây Lâm và cô không phải như thế này. Cuộc hôn nhân của họ, không tối đen, lạnh ngắt và tuyệt vọng như thế này. <br>
+                Biến chất hết cả rồi. <br>
+                Từ người đàn ông mà cô yêu, tới cuộc hôn nhân của bọn họ và cả chính cô. <br>
+                Thế nhưng mọi thứ biến chất từ bao giờ, cô cũng không rõ nữa. <br>
+                Trong bóng đêm, không ai biết ai mới là người nếm trải bi thương... <br>
+            </span> <br>
+            <button class="myBtn read">Read More</button>
+        </article>
+
+
+
+        <article class="col-md-4">
+            <img class="books-img" src="./images/books/Hiện Hình Ánh Sáng.jpg" alt="" width="160px" height="233px">
+                Hiện Hình Ánh Sáng - Hành Trình Chữa Lành Cá Nhân <br>
+
+                “Hiện Hình Ánh Sáng” của tác giả Barbara Ann Brenan là cuốn sách này dành tặng cho tất cả những ai đang trên 
+                <span class="dots">...</span>
+                <span class="more">
+                    đường trở về với Bản thể Đích thực và Thiêng liêng của mình. <br>
+                    
+                    Trong cuốn sách này, tác giả giới thiệu một cách nhìn mới về sức khỏe, bệnh tật, và sự chữa lành.
+                </span> <br>
+            <button class="myBtn read">Read More</button>
+        </article>
+
+
+
+        <article class="col-md-4">
+            <img class="books-img" src="./images/books/Lần Đầu Làm Mẹ.jpg" alt="" width="160px" height="233px">
+                Những người phụ nữ lần đầu mang thai và sắp sửa được làm mẹ, bạn có cảm thấy hoang mang với thời đại này vì quá nhiều thông tin kiến thức liên quan
+                <span class="dots">...</span>
+                <span class="more">
+                    đến thai nhi và kiến thức sinh nở. Cách tốt nhất tôi muốn khuyên bạn rằng: “Hãy thu thập thông tin từ nguồn chính thống và lắng nghe tiếng nói của bản thân mình.” <br>
+                
+                    “Lần đầu làm mẹ” của bác sĩ sản phụ khoa Masato Takeuchi sẽ giúp bạn thực sự yên tâm hơn với những mối lo lắng của bạn. Tập hợp một cách tỉ mỉ, chi tiết tất cả các vấn đề mà bắt buộc bạn phải biết và trải qua khi lần đầu làm mẹ. <br>
+                </span> <br>
+            <button class="myBtn read">Read More</button>
+        </article>
+    </div>
+</section>
+<br>
+
+<script>
+    //jquery với chức năng đọc thêm
+    $(document).ready(function() {
+        $(".read").click(function() { //lấy button có class=".read"
+            $(this).siblings('.more').toggle(); 
+            $(this).siblings('.dots').toggle();
+            if ($(this).text() == 'Read More') { //nếu nội dung của button là Read More thì
+                $(this).text('Read Less');       //chuyển thành Read Less
+            } else {
+                $(this).text('Read More');       //ngược lại chuyển thành Read More
+            }
+        });
+    });
+</script>
+</main>
+
+
+<footer>
+    <section class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+        <div class="noi-dung about">
+            <h2>Về Chúng Tôi</h2>
+            <p>Đông Thi là một trang web giúp cho người dùng có thể dễ dàng tiếp cận sách truyện từ khắp nơi trên thế giới</p>
+            <ul class="social-icon">
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <img src="./images/logo.png" width="450px"  alt="">
+        </div>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đầu Nội Dung Đường Dẫn-->
+        <div class="noi-dung links">
+            <h2>Đường Dẫn</h2>
+            <ul>
+                <li><a href="./trangchu.html">Trang Chủ</a></li>
+                <li><a href="#">Thông Tin Liên Lạc</a></li>
+                <li><a href="./sachTruyen.html">Dịch Vụ</a></li>
+                <li><a href="#top">Đầu Trang</a></li>
+            </ul>
+        </div>
+            <!--Kết Thúc Nội Dung Đường Dẫn-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+        <div class="noi-dung contact">
+            <h2>Thông Tin Liên Hệ</h2>
+            <ul class="info">
+                <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>268 Nguyễn Trãi<br />
+                            An Khánh, Tân An, TP.Hồ Chí Minh<br />
+                            Việt Nam</span>
+                </li>
+                <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="#">+84 123 456 789</a><br/>
+                        <a href="#">+84 987 654 321</a></p>
+                </li>
+                <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="#">diachiemail@gmail.com</a></p>
+                </li>
+                <li>
+                    <form class="form">
+                            <input type="email" class="form_field" placeholder="Đăng Ký Subscribe Email" />
+                            <button type="button" class="btn btn--primary uppercase">Gửi</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+    </section>
+</footer>
+</body>
+</html>

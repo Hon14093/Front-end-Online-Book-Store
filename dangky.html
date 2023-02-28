@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đông Thi | Đăng Ký</title>
+    <link rel="icon"  href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="trangchu.html"></script>
+
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css"> <!--Thư viện font awesome-->
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css"> <!--Khai báo bootstrap css-->
+    <script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script> <!--Khai báo bootstrap js-->
+    <script src="./jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+<header>
+        
+    <a id="#top" href="?" ><img class="center" src="images/logo.png"></a>
+        
+    <nav class="navbar navbar-dark navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse " id="navbarContent">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item">
+                    <a href="trangchu.html">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sachTruyen.html">Sách Truyện</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lienhe.html">Liên Hệ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="search-container">
+        <form name="frm-search" method="get" action="trangtimkiem.html">  
+            <input class="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="words" onkeypress="checkKeySearch(e)">
+            <i class="fa fa-search icon" onclick="doSearch()"></i>
+            <a href="dangky.html" class="fas fa-user icon"></a>
+            <a href="thanhtoan.html" class="fa fa-shopping-cart icon"> <span>0</span></a>
+        </form>
+    </div>
+</header>
+
+<main>
+    <br>
+    <section class="login_content">
+        <form onsubmit="return registerValidate(this);" action="#" method="post" name="frm" style="max-width:500px;margin:auto" enctype="multipart/form-data">
+                <h1>ĐĂNG KÝ</h1>
+                <div class="input-container">
+                    <i class="fa fa-user-circle-o icon-white"></i> <span class="colored">Email hoặc SĐT</span>
+                    <br><input class="input-field" type="text" placeholder="Nhập Email hoặc SĐT" name="email">
+                </div>	
+
+                <div class="input-container">
+                    <i class="fa fa-lock icon-white"></i> <span class="colored">Mật Khẩu</span>
+                  <br><input class="input-field" type="password" placeholder="Nhập Mật Khẩu" name="psw">
+                </div>
+
+                <div class="input-container">
+                    <i class="fa fa-exclamation icon-white"></i> <span class="colored">Nhập lại Mật Khẩu</span>
+                    <br><input class="input-field" type="password" placeholder="Nhập Lại Mật Khẩu" name="psw2">
+                </div>
+
+                <div class="input-container">
+                    <i class="fa fa-id-badge icon-white"></i> <span class="colored">Hình Đại Diện</span>
+                    <br>
+                    <input style="padding-left: 15%;" class="input-field" id="avatar" type="file"  name="avatar">
+                </div>
+
+                <button type="submit" class="">Đăng Ký</button>
+
+                <p>Bằng việc đăng ký, bạn đãđồng ý với Đông Thi về <a href="#"> Điều khoản dịch vụ</a> và <a href="#">Chính sách bảo mật</a></p>
+
+                <p>Bạn đã có tài khoản? <a href="dangnhap.html">Đăng nhập</a></p> 
+        </form>	
+    </section>	
+    <br>
+</main>
+
+
+<footer>
+    <div class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+        <div class="noi-dung about">
+            <h2>Về Chúng Tôi</h2>
+            <p>Đông Thi là một trang web giúp cho người dùng có thể dễ dàng tiếp cận sách truyện từ khắp nơi trên thế giới</p>
+            <ul class="social-icon">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <img src="./images/logo.png" width="450px"  alt="">
+        </div>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đầu Nội Dung Đường Dẫn-->
+        <div class="noi-dung links">
+            <h2>Đường Dẫn</h2>
+            <ul>
+                <li><a href="./trangchu.html">Trang Chủ</a></li>
+                <li><a href="#">Thông Tin Liên Lạc</a></li>
+                <li><a href="./sachTruyen.html">Dịch Vụ</a></li>
+                <li><a href="#">Điều Kiện Chính Sách</a></li>
+            </ul>
+        </div>
+            <!--Kết Thúc Nội Dung Đường Dẫn-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+        <div class="noi-dung contact">
+            <h2>Thông Tin Liên Hệ</h2>
+            <ul class="info">
+                <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>268 Nguyễn Trãi<br />
+                            An Khánh, Tân An, TP.Hồ Chí Minh<br />
+                            Việt Nam</span>
+                </li>
+                <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="#">+84 123 456 789</a><br/>
+                        <a href="#">+84 987 654 321</a></p>
+                </li>
+                <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="#">diachiemail@gmail.com</a></p>
+                </li>
+                <li>
+                    <form class="form">
+                            <input type="email" class="form_field" placeholder="Đăng Ký Subscribe Email" />
+                            <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+    </div>
+</footer>
+</body>
+</html>

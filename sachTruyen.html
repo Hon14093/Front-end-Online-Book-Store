@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đông Thi | Sách Truyện</title>
+    <link rel="icon"  href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="login_scripts.js"></script>
+    
+    <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css"> <!--Thư viện font awesome-->
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css"> <!--Khai báo bootstrap css-->
+    <script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script> <!--Khai báo bootstrap js-->
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="store.js"></script>
+</head>
+
+<body>
+<header>
+        
+    <a id="#top" href="trangchu.html" ><img class="center" src="images/logo.png"></a>
+        
+    <nav class="navbar navbar-dark navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse " id="navbarContent">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item">
+                    <a href="trangchu.html">Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sachTruyen.html">Sách Truyện</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lienhe.html">Liên Hệ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="search-container cart">
+        <form name="frm-search" method="get" action="trangtimkiem.html">  
+            <input class="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="words" onkeypress="checkKeySearch(e)">
+            <i class="fa fa-search icon" onclick="doSearch()"></i>
+            <a href="dangky.html" class="fas fa-user icon"></a>
+            <a href="#cart" class="fa fa-shopping-cart icon"></a>
+        </form>
+    </div>
+</header>
+
+<main>
+<!-------Phần Sách------->
+<section class="container"> <!--Class container trong bootstrap-->
+    <br>
+    <h1>Sách - Books</h1>
+    <div class="row">
+        <article class="col-md-6">
+            <img class="books-img shop-item-image" src="./images/books/Đắc Nhân Tâm.jpg" alt="DacNhanTam">
+            <h2 class="color-underline shop-item-title">Đắc Nhân Tâm</h2>
+            <h5 class="shop-item-price">160,000vnd</h5>
+            <p >
+                Đắc nhân tâm của <b>Dale Carnegie</b> là quyển sách nổi tiếng nhất, bán chạy nhất  và có tầm ảnh hưởng nhất của mọi thời đại. <br>
+                <br>
+                <b>Dale Breckenridge Carnegie</b> (24/11/1888 - 1/11/1955) là một nhà văn và nhà thuyết trình Mỹ và là người chịu trách nhiệm các lớp phát triển con người, kỹ năng, nghệ thuật bán hàng, huấn luyện đoàn thể, nói trước công chúng và các kỹ năng giao tiếp giữa mọi người.</p> <br>
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a>
+            <!--#/ ngăn tag a nhảy lên đầu trang-->
+        </article>
+
+        <article class="col-md-6">
+            <img class="books-img shop-item-image" src="./images/books/Nghĩ Giàu và Làm Giàu.jpg" alt="Giau">
+            <h2 class="color-underline shop-item-title">Think and Grow Rich</h2>
+            <h5 class="shop-item-price">115,000vnd</h5>
+            <p>
+                <b>Think and Grow Rich - Nghĩ giàu và Làm giàu</b> là một trong những cuốn sách bán chạy nhất mọi thời đại. Đã hơn 60 triệu bản được phát hành với gần trăm ngôn ngữ trên toàn thế giới và được công nhận là cuốn sách <b>tạo ra nhiều triệu phú</b> hơn, một cuốn sách truyền cảm hứng thành công nhiều hơn bất cứ cuốn sách kinh doanh nào trong lịch sử. Tác phẩm này đã giúp tác giả của nó, <b>Napoleon Hill</b>, được tôn vinh bằng danh hiệu “người tạo ra những nhà triệu phú”.
+            </p> <br>
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a>       
+        </article>
+
+        <article class="col-md-6">
+            <img class="books-img shop-item-image" src="./images/books/Hiện Hình Ánh Sáng.jpg" alt="" width="160px" height="233px">
+            <h2 class="color-underline shop-item-title">Hiện Hình Ánh Sáng</h2>
+            <h5 class="shop-item-price">169,000vnd</h5>
+            <p>
+               “Hiện Hình Ánh Sáng” của tác giả Barbara Ann Brenan là cuốn sách này dành tặng cho tất cả những ai đang trên đường trở về với <b>Bản thể Đích thực và Thiêng liêng của mình.</b> <br>
+               <br>
+               "Chúng ta chỉ cần duy nhất ánh sáng và lòng nhân ái để chữa lành, và Barbara Brennan quả thấu hiểu chân lý ấy. Hiện hình Ánh sáng đưa chúng ta đến những chiều sâu mới của tri thức chữa lành. Tôi nhiệt liệt khuyên bạn nên đọc cuốn sách này!" - <b>Louise Hay</b>
+            </p> <br>
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a> 
+        </article>
+
+        <article class="col-md-6">
+            <img class="books-img shop-item-image" src="./images/books/Dám Nghĩ Dám Làm.jpg" alt="" width="160px" height="233px">
+            <h2 class="color-underline shop-item-title">Dám Nghĩ Dám Làm</h2>
+            <h5 class="shop-item-price">190,000vnd</h5>
+            <p>
+                Dám Nghĩ Dám Làm là <b>lời kêu gọi loại bỏ</b> những kiến thức và quan điểm không còn hữu ích với bạn và hướng đến việc giúp bạn xây dựng nhận thức về bản thân với tư duy linh hoạt thay vì tính cứng nhắc.
+                <br>
+                Nếu bạn có thể <b>làm chủ nghệ thuật tái tư duy</b>, tôi dám chắc bạn sẽ thành công hơn trong công việc và hạnh phúc hơn trong cuộc sống.
+                <br>
+                Tái tư duy có thể giúp bạn nảy ra <b>những giải pháp mới</b> cho các vấn đề cũ, đồng thời cải tạo lại các giải pháp cũ để áp dụng cho những vấn đề mới.</p> 
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a> 
+        </article>
+
+        <article class="col-md-6">
+            <img class="books-img shop-item-image" src="./images/books/Di Chúc Của Chủ Tịch Hồ Chí Minh.jpg" alt="" width="160px" height="233px">
+            <h2 class="color-underline shop-item-title">Di Chúc Của Chủ Tịch Hồ Chí Minh</h2>
+            <h5 class="shop-item-price">153,000vnd</h5>
+            <p>
+                Di chúc của <b>Chủ tịch Hồ Chí Minh</b> công bố năm 1969, có đề ngày 10/5 gồm 4 trang in khổ 14,5x22 cm. Trong lễ tang của Chủ tịch Hồ Chí Minh, <b>đồng chí Lê Duẩn</b>, khi đó là Bí thư thứ nhất Ban Chấp hành Trung ương Đảng Lao động Việt Nam đọc lời điếu và công bố Di chúc của Người. 
+            </p> 
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a> 
+        </article>
+
+        <article class="col-md-6">
+            <img class="books-img shop-item-image" src="./images/books/Lần Đầu Làm Mẹ.jpg" alt="" width="160px" height="233px">
+            <h2 class="color-underline shop-item-title">Lần Đầu Làm Mẹ</h2>
+            <h5 class="shop-item-price">137,000vnd</h5>
+            <p>
+                Những người phụ nữ <b>lần đầu mang thai</b> và sắp sửa được làm mẹ, bạn có cảm thấy hoang mang với thời đại này vì <b>quá nhiều thông tin kiến thức</b> liên quan đến thai nhi và kiến thức sinh nở. Cách tốt nhất tôi muốn khuyên bạn rằng: “Hãy thu thập thông tin từ nguồn chính thống và lắng nghe tiếng nói của bản thân mình.” <br> </p>
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a> 
+        </article>
+
+        <article class="col-md-6">
+            <img class="books-img shop-item-image" src="./images/books/Dòng Chảy.jpg" alt="" width="160px" height="233px">
+            <h2 class="color-underline shop-item-title">Dòng Chảy</h2>
+            <h5 class="shop-item-price">100,000vnd</h5>
+            <p>
+                Dành cho những ai muốn <b>tối ưu khả năng tập trung</b> để tìm kiếm sự gắn kết trong công việc, hướng đến sự viên mãn, và hạnh phúc trong mọi trải nghiệm cuộc sống.
+
+                Có bao giờ bạn <b>hoàn toàn chìm đắm</b> vào một cuốn sách hay, một công việc, hay một buổi trình diễn đến mức không nhận thấy hàng giờ đồng hồ đã trôi qua, thậm chí bạn <b>chẳng có ý niệm gì</b> về mọi thứ xung quanh hay sự tồn tại của chính mình?
+            </p> <br>
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a> 
+        </article>
+
+        <article class="col-md-6">
+            <img class="books-img shop-item-image" src="./images/books/Kẻ Khôn Cũng Có Khi Khờ.jpg" alt="" width="160px" height="233px">
+            <h2 class="color-underline shop-item-title">Kẻ Khôn Cũng Có Khi khờ</h2>
+            <h5 class="shop-item-price">174,000vnd</h5>
+            <p>
+                Là một cuốn sách “khó đọc”, <b>"Kẻ khôn cũng có khi khờ"</b> tấn công trực tiếp vào tâm thức của người đọc, khi thông qua những bài báo, những quan điểm, luận điểm được phân tích và trình bày, độc giả sẽ thấy đâu đó hình ảnh của chính bản thân mình, về <b>những quyết định “ngu ngốc”</b> của bản thân. Mọi độc giả đều có thể đọc cuốn sách này, vì nội dung sách liên quan đến việc phân tích về sự ngu si của con người trong cả hành động lẫn tâm trí.
+            </p> <br>
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a> 
+        </article>
+    </div>
+</section>
+
+<br>
+<!-------Phần Truyện------->
+<section class="container"> 
+    <h1>Truyện - Stories</h1>
+    <div class="row">
+        <article class="col-md-6">
+            <img class="books-img shop-item-image" src="./images/books/Những Năm Tháng Vội Vã.jpg" width="160px" height="233px">
+            <h2 class="color-underline shop-item-title">Những Năm Tháng Vội Vã</h2>
+            <h5 class="shop-item-price">152,000vnd</h5>
+            <p>
+                Việt Nam vào giai đoạn nửa thuộc địa nửa phong kiến, thời kỳ nhiễu nhương, dở dở ương ương, con người vẫy vùng giữa cái mới và cái cũ. Trong tư tưởng giằng co đó thì những mối tình đồng giới bị xem là thứ bệnh truyền nhiễm cần được chữa trị. Hai người đàn ông sinh nhầm thời. Vì định kiến xã hội mà họ phải bỏ lỡ nhau đến bảy năm. Năm tháng vội vã, thời gian như thoi đưa. Trong bảy năm đó, họ có tất cả nhưng lại không thể có nhau…
+            </p> <br>
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a> 
+        </article>
+
+        <article class="col-md-6">
+            <img class="books-img shop-item-image" src="./images/books/Con Quạ.jpg" width="160px" height="233px">
+            <h2 class="color-underline shop-item-title">Con Quạ - The Raven</h2>
+            <h5 class="shop-item-price">182,000vnd</h5>
+            <p>
+                Một đêm nao lúc giữa đêm buồn thảm, tôi đương ngẫm ngợi mệt lả và rã rời <br>
+                Trước cuốn sách chẳng còn ai nhớ đến khá lạ kỳ và xưa cũ <br>
+                Tôi đương gà gật gần như thiếp đi, đột nhiên có tiếng đập vào cửa <br>
+                Như có ai nhẹ nhàng gõ cửa - gõ vào cửa buồng tôi <br>
+                "Có khách nào", tôi khẽ nói, "đập vào cửa buồng" <br>
+                Chỉ vậy thôi chẳng có gì hơn nữa <br>
+            </p> <br>
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a> 
+        </article>
+
+        <article class="col-md-6">
+            <img class="books-img shop-item-image" src="./images/books/Vực Tối Hôn Nhân.jpg" width="160px" height="233px">
+            <h2 class="color-underline shop-item-title">Vực Tối Hôn Nhân</h2>
+            <h5 class="shop-item-price">145,000vnd</h5>
+            <p>
+                Nhẫn cưới 5 năm tuổi. <br>
+                Bọn họ đã kết hôn được 5 năm. <br>
+                Dao nhớ ngày họ kết hôn, lúc đeo nhẫn vào tay của cô, Lâm đã nói: “Chúng ta hãy sống hạnh phúc cả đời này.” <br>
+                Vậy mà hiện tại anh nói: “Chúng ta hãy làm khổ nhau cả đời đi.” <br>
+                Dao nhớ, trước đây Lâm và cô không phải như thế này. Cuộc hôn nhân của họ, không tối đen, lạnh ngắt và tuyệt vọng như thế này. <br>
+                Biến chất hết cả rồi. <br>
+            </p> 
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a> 
+        </article>
+
+        <article class="col-md-6">
+            <img class="books-img shop-item-image" src="./images/books/The Shining.jpg" width="160px" height="233px">
+            <h2 class="color-underline shop-item-title">The Shining</h2>
+            <h5 class="shop-item-price">216,000vnd</h5>
+            <p>
+                “The Shining” lấy bối cảnh tại tiểu bang Colorado vào thập niên 1970s. Nó nhắm trọng tâm vào gia đình Torrances: người chồng Jack, người vợ Wendy, và người con trai 5 tuổi của họ, Danny. Khởi đầu của cuốn tiểu thuyết, Jack được thuê làm người trông coi của Khách Sạn Overlook ở xa cho mùa đông nghỉ lễ.
+            </p> <br>
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a> 
+        </article>
+
+        <article class="col-md-6" style="margin-bottom: 1rem;">
+            <img class="books-img shop-item-image" src="./images/books/Coraline.jpg" width="160px" height="233px" >
+            <h2 class="color-underline shop-item-title">Coraline</h2>
+            <h5 class="shop-item-price">205,000vnd</h5>
+            <p>
+                Khi Coraline bước qua cánh cửa, nó nhìn thấy một ngôi nhà giống hệt nhà mình. Chỉ có điều, mọi thứ dường như tốt đẹp và hấp dẫn hơn. <br>
+                Nơi ấy có mẹ khác của nó, và cả cha khác nữa. Họ muốn nó ở lại làm con gái bé bỏng của họ. Họ muốn thay đổi nó và giữ nó bên mình mãi mãi. <br>
+
+                Nhưng từ phía sau cánh cửa, Coraline mới biết điều nó thật sự cần. Nó khao khát trở lại cuộc sống đích thực của mình. Bằng tất cả trí khôn và lòng dũng cảm, Coraline đã thực hiện một hành trình phi thường, ly kỳ và vô cùng bất ngờ...
+            </p> 
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a> 
+        </article>
+
+        <article class="col-md-6" style="margin-bottom: 1rem;">
+            <img class="books-img shop-item-image" src="./images/books/Tắt Đèn.jpg" width="160px" height="233px">
+            <h2 class="color-underline shop-item-title">Tắt Đèn</h2>
+            <h5 class="shop-item-price">156,000vnd</h5>
+            <p>
+                Cái nghèo, cái tàn ác của xã hội ép con người lúc bấy giờ phải lâm vào đường cùng, đến mức chị Dậu, người đàn bà kiên cường ấy phải bán đi đứa con gái và đàn chó con còn đỏ hỏn để có tiền đóng sưu. Cho dù là thế thì cuộc đời chị đến cuối cùng vẫn chưa từng được thắp sáng, đủ để người đọc cảm nhận được cái tối tăm, bần cùng, ác độc của xã hội bấy giờ mà thốt lên tiếng xót xa cho thân phận người nông dân lao động.
+            </p> <br>
+            <a href="#/" class="add-cart shop-item-button">Thêm vào giỏ</a> 
+        </article>
+    </div>
+</section>
+<br>
+<!--Giỏ Hàng--> <!--Các class container, col-md-10, border, rounded nằm trong bootstrap-->
+<section class="container content-section col-md-10 border rounded" id="cart">
+    <h2 class="section-header border-bottom">GIỎ HÀNG</h2> <!--class border-bottom nằm trong bootstrap-->
+    <div class="cart-row">
+        <span class="cart-item cart-header border-bottom">SÁCH</span>
+        <span class="cart-price cart-header border-bottom">GIÁ TIỀN</span>
+        <span class="cart-quantity cart-header border-bottom">SỐ LƯỢNG</span>
+    </div>
+    <div class="cart-items">
+       
+    </div>
+    <div class="cart-total border-top">
+        <strong class="cart-total-title ">Tổng cộng</strong>
+        <span class="cart-total-price">0 vnd</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button" onclick="purchaseClicked()">THANH TOÁN</button> 
+    <!--Class btn, btn-primary nằm trong bootstrap-->
+</section>
+<br>
+
+</main>
+
+<footer>
+    <div class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+        <div class="noi-dung about">
+            <h2>Về Chúng Tôi</h2>
+            <p>Đông Thi là một trang web giúp cho người dùng có thể dễ dàng tiếp cận sách truyện từ khắp nơi trên thế giới</p>
+            <ul class="social-icon">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <img src="./images/logo.png" width="450px"  alt="">
+        </div>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đầu Nội Dung Đường Dẫn-->
+        <div class="noi-dung links">
+            <h2>Đường Dẫn</h2>
+            <ul>
+                <li><a href="./trangchu.html">Trang Chủ</a></li>
+                <li><a href="#">Thông Tin Liên Lạc</a></li>
+                <li><a href="./sachTruyen.html">Dịch Vụ</a></li>
+                <li><a href="#">Điều Kiện Chính Sách</a></li>
+                <li><a href="#top">Đầu Trang</a></li>
+            </ul>
+        </div>
+            <!--Kết Thúc Nội Dung Đường Dẫn-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+        <div class="noi-dung contact">
+            <h2>Thông Tin Liên Hệ</h2>
+            <ul class="info">
+                <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>268 Nguyễn Trãi<br />
+                            An Khánh, Tân An, TP.Hồ Chí Minh<br />
+                            Việt Nam</span>
+                </li>
+                <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="#">+84 123 456 789</a><br/>
+                        <a href="#">+84 987 654 321</a></p>
+                </li>
+                <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="#">diachiemail@gmail.com</a></p>
+                </li>
+                <li>
+                    <form class="form">
+                            <input type="email" class="form_field" placeholder="Đăng Ký Subscribe Email" />
+                            <button type="button" class="btn btn--primary uppercase">Gửi</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+    </div>
+</footer>
+</body>
+</html>

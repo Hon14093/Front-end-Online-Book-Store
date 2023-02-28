@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif !important;
+    max-width: 100%;
+    font-size: 18px;
+    margin: 0 auto;
+    font-weight: 550 !important; /*thay đổi độ đậm của font thành 550*/
+                                 /*thêm !important vì độ đậm mặc định của bootstrap là 400*/   
+}
+
+.intro-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0;
+    box-shadow: 10px 10px 5px;
+    height: 300px;
+}
+
+p, li{
+    font-family: "Poppins", sans-serif;
+}
+
+.search-input {
+    font: inherit;
+    color: #a3a3a3;
+    border: solid 1px black;
+    padding-left: 5px;
+    outline: 0;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+}
+
+.center {
+    display: block;
+    margin: 0px auto;
+    margin-top: -20px;
+    height: 90%;
+    width: auto;
+    max-width: 100%;
+}
+
+main h1 {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000000;
+    line-height: 34px;
+    line-height: 1;
+    border-radius: 10rem;
+    margin: 1rem;
+    padding: 1.25rem;
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-color: blueviolet;
+    color: white;
+}
+main h5 {
+    color: white;
+}
+
+.color-underline {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.color-underline::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: rgb(164, 72, 250);
+}
+
+b {
+    color: white;
+}
+
+i{
+    color: blueviolet;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-image: url('./images/bgmain-cropped-2.png');
+    background-repeat: no-repeat;
+    height: 295px;
+    background-size: cover;
+    margin: 0 1rem;
+}
+nav {
+    display: flex;
+    height: 20px !important;
+    justify-content: flex-start !important;
+    float: left !important;
+}
+nav a { 
+    margin: 2px 2px;
+    padding: 1px 3px !important;
+    text-decoration: none;
+    font-size: 16px;
+    color: blueviolet;
+    font-family: "Poppins", sans-serif;
+    float: left;
+    border: 1px solid blueviolet;
+    background: white;
+    box-shadow: 0 0 3px 0 #00000066, 0 0 3px 0 #0000004d;
+}
+nav a:hover
+{   
+    color:white;
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);	
+}
+.search-container {
+    float: right !important;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+	padding-top: 1px;
+}
+
+.icon {
+    margin-top: 2px;
+	padding: 4px !important;
+	min-width: 30px;
+	color: blueviolet;
+	text-align: center;
+	cursor:pointer;
+	background-color: white;    
+	margin: 0 4px 4px;
+    box-shadow: 0 0 3px 0 #00000066, 0 0 3px 0 #0000004d;
+}
+.icon:hover {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1));
+    color: white;
+}
+
+main {
+    grid-area: main-cell;
+    background-image: url('./images/Sprinkle-gradient2.png');
+    background-size: 100%;
+    margin: 1rem;
+    color: black;
+}
+
+.myBtn {
+    background-color: white;
+    border: solid 1px blueviolet;
+    color: blueviolet;
+    padding: 15px 30px;
+    text-align: center;
+    margin: 1rem auto;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.myBtn:hover {
+    border: solid 1px white;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: white;
+}
+
+.books-img {
+    display: block;
+    width: 160px;
+    margin: 1rem auto;
+    text-align: center;
+    box-shadow: 10px 10px 5px;
+}
+.more {
+    display: none;
+}
+
+.add-cart {
+    bottom: 5px;
+    background-color: white;
+    border: solid 1px blueviolet;
+    color: blueviolet;
+    font-size: 1rem;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+.add-cart:hover {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: white;
+}
+
+/*----------Giỏ Hàng----------*/
+.section-header {
+    font-family: "Metal Mania";
+    margin: 10px;
+    text-shadow: 5px 5px blueviolet;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+.cart-row {
+    display: flex;
+    margin: 0 10px;
+}
+.cart-item {
+    width: 50%;
+}
+.cart-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
+    width: 30%;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-quantity {
+    width: 35%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+.cart-item-title {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.cart-item-image {
+    margin: 10px 0;
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+} 
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+}
+.cart-total {
+    margin: 10px;
+}
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 5px 5px blueviolet;
+    margin-right: 20px;
+}
+.cart-total-price {
+    color: white;
+    font-size: 1.1em;
+}
+.btn-purchase {
+    display: block;
+    margin: 0 10px 1rem;
+    font-size: 1.75em;
+}
+
+/*-------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+footer {
+    grid-area: footer-cell;
+    background-color: #b5c2ff;
+    background-image: url('./images/Sprinkle.png');
+    position: relative;
+    
+    height: auto;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/*---Thiet lap phan noi dung gioi thieu---*/
+footer .container .noi-dung {
+    margin-right: 30px;
+}
+footer .container .noi-dung.about {
+    width: 40%;
+}
+footer .container .noi-dung.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container .noi-dung.about h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: blueviolet;
+}
+footer .container .noi-dung.about p{
+    color: grey;
+}
+/*---thiet lap phan icon---*/
+.social-icon {
+    margin-top: 20px;
+    display: flex;
+}
+.social-icon li{
+    list-style: none;
+}
+.social-icon li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.social-icon li a:hover {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1));
+}
+.social-icon li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+/*thiet lap phan links*/
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: blueviolet;
+}
+.links{
+    position: relative;
+    width: 25%;
+}
+.links ul li{
+    padding-left: -10px;
+    list-style: none;
+}
+.links ul li a{
+    color: grey;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.links ul li a:hover{
+    color: #fff;
+}
+/*thiet lap phan lien he*/
+.contact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: blueviolet;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: grey;
+}
+.contact .info li a{
+    color: grey;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+.btn--primary {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 8px 24px;
+}
+.btn--primary:hover {
+    background: #f00;
+}
+.btn--primary:active {
+    background: #f00;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+.form_field {
+    width: 90%;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    border: 0;
+    outline: 0;
+    padding: 8px 4px;
+}
+/*-----responsive của footer-----*/
+@media  (max-width: 768px){
+    footer{
+        padding: 40px;
+             }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .noi-dung{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container, .noi-dung.about, .links, .contact{
+        width: 100%;
+    }
+}
+
+
+/*-----Phần đăng nhập, đăng ký và liên hệ-----*/
+.login_content {
+    display: block;
+    background-color: rgb(256, 256, 256, 0.8);
+    margin: 1rem 25%;
+    border-radius: 30px;
+    padding: 25px 0 50px;
+    border: 4px solid white;
+    font-size: 25px;
+	text-align:center;
+}
+
+.login_content p{
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    padding-top: 2px;
+}
+
+.login_content input{
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    padding-left: 5px;
+    margin: 5px;
+    height: 50px;
+}
+
+.login_content input[type="radio" i] {
+    height: 13px;
+    margin-right: 1em;
+}
+.login_content input[type="checkbox" i] {
+    height: 13px;
+    margin-left: -2px;
+}
+.login_content .colored {
+    color: blueviolet;
+    font-weight: 400;
+}
+.login_content button {
+    padding: 6px 12px;
+    font-size: 16px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    transition: 2s;
+}
+.login_content button:hover {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);;
+}
